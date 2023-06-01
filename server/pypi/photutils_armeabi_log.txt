@@ -2,9 +2,9 @@ build-wheel.py: cd /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/
 build-wheel.py: rm -rf /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a
 build-wheel.py: mkdir -p /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a
 build-wheel.py: Using cached sdist
-build-wheel.py: tar -C /tmp/build-wheel-n_s7giki -xf photutils-1.8.0.tar.gz
-build-wheel.py: mv /tmp/build-wheel-n_s7giki/photutils-1.8.0 /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/src
-build-wheel.py: rm -rf /tmp/build-wheel-n_s7giki
+build-wheel.py: tar -C /tmp/build-wheel-gvttokp2 -xf photutils-1.8.0.tar.gz
+build-wheel.py: mv /tmp/build-wheel-gvttokp2/photutils-1.8.0 /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/src
+build-wheel.py: rm -rf /tmp/build-wheel-gvttokp2
 build-wheel.py: mv /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/src/pyproject.toml /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/src/pyproject-chaquopy-disabled.toml
 build-wheel.py: mkdir -p /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/requirements
 build-wheel.py: mkdir -p /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/requirements/chaquopy/include
@@ -13,4 +13,291 @@ build-wheel.py: unzip -q -d /home/deniz/dev/fork/chaquopy/server/pypi/packages/p
 build-wheel.py: mv /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/requirements/chaquopy/jniLibs/armeabi-v7a/* /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/requirements/chaquopy/lib
 build-wheel.py: rm -r /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/requirements/chaquopy/jniLibs
 build-wheel.py: unzip -d /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/requirements -q /home/deniz/dev/fork/chaquopy/server/pypi/dist/numpy/numpy-1.21.4-1-cp38-cp38-android_16_armeabi_v7a.whl
-build-wheel.py: Error: Couldn't find wheel for requirement astropy 5.1.0
+build-wheel.py: unzip -d /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/requirements -q /home/deniz/dev/fork/chaquopy/server/pypi/dist/astropy/astropy-5.1-0-cp38-cp38-android_21_armeabi_v7a.whl
+build-wheel.py: ln -s libcrypto_chaquopy.so /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/requirements/chaquopy/lib/libcrypto.so
+build-wheel.py: ln -s libssl_chaquopy.so /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/requirements/chaquopy/lib/libssl.so
+build-wheel.py: ln -s libsqlite3_chaquopy.so /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/requirements/chaquopy/lib/libsqlite3.so
+build-wheel.py: ln -s libpython3.8.so /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/requirements/chaquopy/lib/libpython3..so
+build-wheel.py: abi=armeabi-v7a; api_level=21; prefix=/home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/requirements/chaquopy; . /home/deniz/dev/fork/chaquopy/server/pypi/../../target/build-common.sh; export
+build-wheel.py: /home/deniz/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar rc /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/requirements/chaquopy/lib/libpthread.a
+build-wheel.py: /home/deniz/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar rc /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/requirements/chaquopy/lib/librt.a
+build-wheel.py: cd /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/src
+build-wheel.py: python3.8 -m pip --disable-pip-version-check wheel --no-deps -v -e .
+/home/deniz/.virtualenvs/chaq/lib/python3.8/site-packages/_distutils_hack/__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+Created temporary directory: /tmp/pip-ephem-wheel-cache-ivvy6zq7
+Created temporary directory: /tmp/pip-req-tracker-k9j5pu55
+Created requirements tracker '/tmp/pip-req-tracker-k9j5pu55'
+Created temporary directory: /tmp/pip-wheel-tqgdogdc
+Obtaining file:///home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/src
+  Added file:///home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/src to build tracker '/tmp/pip-req-tracker-k9j5pu55'
+    Running setup.py (path:/home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/src/setup.py) egg_info for package from file:///home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/src
+    Running command python setup.py egg_info
+    running egg_info
+    writing photutils.egg-info/PKG-INFO
+    writing dependency_links to photutils.egg-info/dependency_links.txt
+    writing requirements to photutils.egg-info/requires.txt
+    writing top-level names to photutils.egg-info/top_level.txt
+    reading manifest file 'photutils.egg-info/SOURCES.txt'
+    reading manifest template 'MANIFEST.in'
+    warning: no files found matching 'pyproject.toml'
+    no previously-included directories found matching 'build'
+    no previously-included directories found matching 'docs/_build'
+    no previously-included directories found matching 'docs/api'
+    warning: no previously-included files matching '*.pyc' found anywhere in distribution
+    warning: no previously-included files matching '*.o' found anywhere in distribution
+    adding license file 'LICENSE.rst'
+    writing manifest file 'photutils.egg-info/SOURCES.txt'
+  Source in /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/src has version 1.8.0, which satisfies requirement photutils==1.8.0 from file:///home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/src
+  Removed photutils==1.8.0 from file:///home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/src from build tracker '/tmp/pip-req-tracker-k9j5pu55'
+Building wheels for collected packages: photutils
+  Created temporary directory: /tmp/pip-wheel-bk6kerev
+  Building wheel for photutils (setup.py): started
+  Destination directory: /tmp/pip-wheel-bk6kerev
+  Running command /home/deniz/.virtualenvs/chaq/bin/python3.8 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/src/setup.py'"'"'; __file__='"'"'/home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/src/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' bdist_wheel -d /tmp/pip-wheel-bk6kerev
+  running bdist_wheel
+  running build
+  running build_py
+  creating build
+  creating build/lib.linux_armv7l-cpython-38
+  creating build/lib.linux_armv7l-cpython-38/photutils
+  copying photutils/_astropy_init.py -> build/lib.linux_armv7l-cpython-38/photutils
+  copying photutils/version.py -> build/lib.linux_armv7l-cpython-38/photutils
+  copying photutils/conftest.py -> build/lib.linux_armv7l-cpython-38/photutils
+  copying photutils/__init__.py -> build/lib.linux_armv7l-cpython-38/photutils
+  creating build/lib.linux_armv7l-cpython-38/photutils/segmentation
+  copying photutils/segmentation/core.py -> build/lib.linux_armv7l-cpython-38/photutils/segmentation
+  copying photutils/segmentation/utils.py -> build/lib.linux_armv7l-cpython-38/photutils/segmentation
+  copying photutils/segmentation/deblend.py -> build/lib.linux_armv7l-cpython-38/photutils/segmentation
+  copying photutils/segmentation/catalog.py -> build/lib.linux_armv7l-cpython-38/photutils/segmentation
+  copying photutils/segmentation/__init__.py -> build/lib.linux_armv7l-cpython-38/photutils/segmentation
+  copying photutils/segmentation/detect.py -> build/lib.linux_armv7l-cpython-38/photutils/segmentation
+  copying photutils/segmentation/finder.py -> build/lib.linux_armv7l-cpython-38/photutils/segmentation
+  creating build/lib.linux_armv7l-cpython-38/photutils/morphology
+  copying photutils/morphology/core.py -> build/lib.linux_armv7l-cpython-38/photutils/morphology
+  copying photutils/morphology/non_parametric.py -> build/lib.linux_armv7l-cpython-38/photutils/morphology
+  copying photutils/morphology/__init__.py -> build/lib.linux_armv7l-cpython-38/photutils/morphology
+  creating build/lib.linux_armv7l-cpython-38/photutils/tests
+  copying photutils/tests/__init__.py -> build/lib.linux_armv7l-cpython-38/photutils/tests
+  creating build/lib.linux_armv7l-cpython-38/photutils/profiles
+  copying photutils/profiles/core.py -> build/lib.linux_armv7l-cpython-38/photutils/profiles
+  copying photutils/profiles/radial_profile.py -> build/lib.linux_armv7l-cpython-38/photutils/profiles
+  copying photutils/profiles/curve_of_growth.py -> build/lib.linux_armv7l-cpython-38/photutils/profiles
+  copying photutils/profiles/__init__.py -> build/lib.linux_armv7l-cpython-38/photutils/profiles
+  creating build/lib.linux_armv7l-cpython-38/photutils/background
+  copying photutils/background/core.py -> build/lib.linux_armv7l-cpython-38/photutils/background
+  copying photutils/background/interpolators.py -> build/lib.linux_armv7l-cpython-38/photutils/background
+  copying photutils/background/__init__.py -> build/lib.linux_armv7l-cpython-38/photutils/background
+  copying photutils/background/background_2d.py -> build/lib.linux_armv7l-cpython-38/photutils/background
+  creating build/lib.linux_armv7l-cpython-38/photutils/psf
+  copying photutils/psf/photometry.py -> build/lib.linux_armv7l-cpython-38/photutils/psf
+  copying photutils/psf/models.py -> build/lib.linux_armv7l-cpython-38/photutils/psf
+  copying photutils/psf/utils.py -> build/lib.linux_armv7l-cpython-38/photutils/psf
+  copying photutils/psf/groupstars.py -> build/lib.linux_armv7l-cpython-38/photutils/psf
+  copying photutils/psf/epsf_stars.py -> build/lib.linux_armv7l-cpython-38/photutils/psf
+  copying photutils/psf/__init__.py -> build/lib.linux_armv7l-cpython-38/photutils/psf
+  copying photutils/psf/epsf.py -> build/lib.linux_armv7l-cpython-38/photutils/psf
+  creating build/lib.linux_armv7l-cpython-38/photutils/extern
+  copying photutils/extern/__init__.py -> build/lib.linux_armv7l-cpython-38/photutils/extern
+  creating build/lib.linux_armv7l-cpython-38/photutils/isophote
+  copying photutils/isophote/isophote.py -> build/lib.linux_armv7l-cpython-38/photutils/isophote
+  copying photutils/isophote/sample.py -> build/lib.linux_armv7l-cpython-38/photutils/isophote
+  copying photutils/isophote/geometry.py -> build/lib.linux_armv7l-cpython-38/photutils/isophote
+  copying photutils/isophote/ellipse.py -> build/lib.linux_armv7l-cpython-38/photutils/isophote
+  copying photutils/isophote/model.py -> build/lib.linux_armv7l-cpython-38/photutils/isophote
+  copying photutils/isophote/fitter.py -> build/lib.linux_armv7l-cpython-38/photutils/isophote
+  copying photutils/isophote/integrator.py -> build/lib.linux_armv7l-cpython-38/photutils/isophote
+  copying photutils/isophote/__init__.py -> build/lib.linux_armv7l-cpython-38/photutils/isophote
+  copying photutils/isophote/harmonics.py -> build/lib.linux_armv7l-cpython-38/photutils/isophote
+  creating build/lib.linux_armv7l-cpython-38/photutils/datasets
+  copying photutils/datasets/make.py -> build/lib.linux_armv7l-cpython-38/photutils/datasets
+  copying photutils/datasets/load.py -> build/lib.linux_armv7l-cpython-38/photutils/datasets
+  copying photutils/datasets/__init__.py -> build/lib.linux_armv7l-cpython-38/photutils/datasets
+  creating build/lib.linux_armv7l-cpython-38/photutils/centroids
+  copying photutils/centroids/core.py -> build/lib.linux_armv7l-cpython-38/photutils/centroids
+  copying photutils/centroids/gaussian.py -> build/lib.linux_armv7l-cpython-38/photutils/centroids
+  copying photutils/centroids/__init__.py -> build/lib.linux_armv7l-cpython-38/photutils/centroids
+  creating build/lib.linux_armv7l-cpython-38/photutils/utils
+  copying photutils/utils/_round.py -> build/lib.linux_armv7l-cpython-38/photutils/utils
+  copying photutils/utils/depths.py -> build/lib.linux_armv7l-cpython-38/photutils/utils
+  copying photutils/utils/footprints.py -> build/lib.linux_armv7l-cpython-38/photutils/utils
+  copying photutils/utils/_convolution.py -> build/lib.linux_armv7l-cpython-38/photutils/utils
+  copying photutils/utils/_parameters.py -> build/lib.linux_armv7l-cpython-38/photutils/utils
+  copying photutils/utils/_moments.py -> build/lib.linux_armv7l-cpython-38/photutils/utils
+  copying photutils/utils/_misc.py -> build/lib.linux_armv7l-cpython-38/photutils/utils
+  copying photutils/utils/_wcs_helpers.py -> build/lib.linux_armv7l-cpython-38/photutils/utils
+  copying photutils/utils/_stats.py -> build/lib.linux_armv7l-cpython-38/photutils/utils
+  copying photutils/utils/cutouts.py -> build/lib.linux_armv7l-cpython-38/photutils/utils
+  copying photutils/utils/colormaps.py -> build/lib.linux_armv7l-cpython-38/photutils/utils
+  copying photutils/utils/exceptions.py -> build/lib.linux_armv7l-cpython-38/photutils/utils
+  copying photutils/utils/errors.py -> build/lib.linux_armv7l-cpython-38/photutils/utils
+  copying photutils/utils/__init__.py -> build/lib.linux_armv7l-cpython-38/photutils/utils
+  copying photutils/utils/_optional_deps.py -> build/lib.linux_armv7l-cpython-38/photutils/utils
+  copying photutils/utils/_quantity_helpers.py -> build/lib.linux_armv7l-cpython-38/photutils/utils
+  copying photutils/utils/interpolation.py -> build/lib.linux_armv7l-cpython-38/photutils/utils
+  creating build/lib.linux_armv7l-cpython-38/photutils/geometry
+  copying photutils/geometry/__init__.py -> build/lib.linux_armv7l-cpython-38/photutils/geometry
+  creating build/lib.linux_armv7l-cpython-38/photutils/detection
+  copying photutils/detection/core.py -> build/lib.linux_armv7l-cpython-38/photutils/detection
+  copying photutils/detection/peakfinder.py -> build/lib.linux_armv7l-cpython-38/photutils/detection
+  copying photutils/detection/irafstarfinder.py -> build/lib.linux_armv7l-cpython-38/photutils/detection
+  copying photutils/detection/starfinder.py -> build/lib.linux_armv7l-cpython-38/photutils/detection
+  copying photutils/detection/__init__.py -> build/lib.linux_armv7l-cpython-38/photutils/detection
+  copying photutils/detection/daofinder.py -> build/lib.linux_armv7l-cpython-38/photutils/detection
+  creating build/lib.linux_armv7l-cpython-38/photutils/aperture
+  copying photutils/aperture/core.py -> build/lib.linux_armv7l-cpython-38/photutils/aperture
+  copying photutils/aperture/attributes.py -> build/lib.linux_armv7l-cpython-38/photutils/aperture
+  copying photutils/aperture/stats.py -> build/lib.linux_armv7l-cpython-38/photutils/aperture
+  copying photutils/aperture/bounding_box.py -> build/lib.linux_armv7l-cpython-38/photutils/aperture
+  copying photutils/aperture/photometry.py -> build/lib.linux_armv7l-cpython-38/photutils/aperture
+  copying photutils/aperture/rectangle.py -> build/lib.linux_armv7l-cpython-38/photutils/aperture
+  copying photutils/aperture/ellipse.py -> build/lib.linux_armv7l-cpython-38/photutils/aperture
+  copying photutils/aperture/circle.py -> build/lib.linux_armv7l-cpython-38/photutils/aperture
+  copying photutils/aperture/mask.py -> build/lib.linux_armv7l-cpython-38/photutils/aperture
+  copying photutils/aperture/__init__.py -> build/lib.linux_armv7l-cpython-38/photutils/aperture
+  creating build/lib.linux_armv7l-cpython-38/photutils/segmentation/tests
+  copying photutils/segmentation/tests/test_utils.py -> build/lib.linux_armv7l-cpython-38/photutils/segmentation/tests
+  copying photutils/segmentation/tests/test_detect.py -> build/lib.linux_armv7l-cpython-38/photutils/segmentation/tests
+  copying photutils/segmentation/tests/test_catalog.py -> build/lib.linux_armv7l-cpython-38/photutils/segmentation/tests
+  copying photutils/segmentation/tests/test_finder.py -> build/lib.linux_armv7l-cpython-38/photutils/segmentation/tests
+  copying photutils/segmentation/tests/test_deblend.py -> build/lib.linux_armv7l-cpython-38/photutils/segmentation/tests
+  copying photutils/segmentation/tests/__init__.py -> build/lib.linux_armv7l-cpython-38/photutils/segmentation/tests
+  copying photutils/segmentation/tests/test_core.py -> build/lib.linux_armv7l-cpython-38/photutils/segmentation/tests
+  creating build/lib.linux_armv7l-cpython-38/photutils/morphology/tests
+  copying photutils/morphology/tests/test_non_parametric.py -> build/lib.linux_armv7l-cpython-38/photutils/morphology/tests
+  copying photutils/morphology/tests/__init__.py -> build/lib.linux_armv7l-cpython-38/photutils/morphology/tests
+  copying photutils/morphology/tests/test_core.py -> build/lib.linux_armv7l-cpython-38/photutils/morphology/tests
+  creating build/lib.linux_armv7l-cpython-38/photutils/profiles/tests
+  copying photutils/profiles/tests/test_radial_profile.py -> build/lib.linux_armv7l-cpython-38/photutils/profiles/tests
+  copying photutils/profiles/tests/__init__.py -> build/lib.linux_armv7l-cpython-38/photutils/profiles/tests
+  copying photutils/profiles/tests/test_curve_of_growth.py -> build/lib.linux_armv7l-cpython-38/photutils/profiles/tests
+  creating build/lib.linux_armv7l-cpython-38/photutils/background/tests
+  copying photutils/background/tests/test_background_2d.py -> build/lib.linux_armv7l-cpython-38/photutils/background/tests
+  copying photutils/background/tests/__init__.py -> build/lib.linux_armv7l-cpython-38/photutils/background/tests
+  copying photutils/background/tests/test_core.py -> build/lib.linux_armv7l-cpython-38/photutils/background/tests
+  creating build/lib.linux_armv7l-cpython-38/photutils/psf/tests
+  copying photutils/psf/tests/test_utils.py -> build/lib.linux_armv7l-cpython-38/photutils/psf/tests
+  copying photutils/psf/tests/test_models.py -> build/lib.linux_armv7l-cpython-38/photutils/psf/tests
+  copying photutils/psf/tests/test_groupstars.py -> build/lib.linux_armv7l-cpython-38/photutils/psf/tests
+  copying photutils/psf/tests/test_photometry.py -> build/lib.linux_armv7l-cpython-38/photutils/psf/tests
+  copying photutils/psf/tests/test_epsf_stars.py -> build/lib.linux_armv7l-cpython-38/photutils/psf/tests
+  copying photutils/psf/tests/test_epsf.py -> build/lib.linux_armv7l-cpython-38/photutils/psf/tests
+  copying photutils/psf/tests/__init__.py -> build/lib.linux_armv7l-cpython-38/photutils/psf/tests
+  creating build/lib.linux_armv7l-cpython-38/photutils/psf/matching
+  copying photutils/psf/matching/__init__.py -> build/lib.linux_armv7l-cpython-38/photutils/psf/matching
+  copying photutils/psf/matching/windows.py -> build/lib.linux_armv7l-cpython-38/photutils/psf/matching
+  copying photutils/psf/matching/fourier.py -> build/lib.linux_armv7l-cpython-38/photutils/psf/matching
+  creating build/lib.linux_armv7l-cpython-38/photutils/psf/matching/tests
+  copying photutils/psf/matching/tests/test_fourier.py -> build/lib.linux_armv7l-cpython-38/photutils/psf/matching/tests
+  copying photutils/psf/matching/tests/test_windows.py -> build/lib.linux_armv7l-cpython-38/photutils/psf/matching/tests
+  copying photutils/psf/matching/tests/__init__.py -> build/lib.linux_armv7l-cpython-38/photutils/psf/matching/tests
+  creating build/lib.linux_armv7l-cpython-38/photutils/isophote/tests
+  copying photutils/isophote/tests/test_fitter.py -> build/lib.linux_armv7l-cpython-38/photutils/isophote/tests
+  copying photutils/isophote/tests/test_isophote.py -> build/lib.linux_armv7l-cpython-38/photutils/isophote/tests
+  copying photutils/isophote/tests/test_geometry.py -> build/lib.linux_armv7l-cpython-38/photutils/isophote/tests
+  copying photutils/isophote/tests/test_angles.py -> build/lib.linux_armv7l-cpython-38/photutils/isophote/tests
+  copying photutils/isophote/tests/make_test_data.py -> build/lib.linux_armv7l-cpython-38/photutils/isophote/tests
+  copying photutils/isophote/tests/test_harmonics.py -> build/lib.linux_armv7l-cpython-38/photutils/isophote/tests
+  copying photutils/isophote/tests/test_regression.py -> build/lib.linux_armv7l-cpython-38/photutils/isophote/tests
+  copying photutils/isophote/tests/test_sample.py -> build/lib.linux_armv7l-cpython-38/photutils/isophote/tests
+  copying photutils/isophote/tests/__init__.py -> build/lib.linux_armv7l-cpython-38/photutils/isophote/tests
+  copying photutils/isophote/tests/test_model.py -> build/lib.linux_armv7l-cpython-38/photutils/isophote/tests
+  copying photutils/isophote/tests/test_ellipse.py -> build/lib.linux_armv7l-cpython-38/photutils/isophote/tests
+  copying photutils/isophote/tests/test_integrator.py -> build/lib.linux_armv7l-cpython-38/photutils/isophote/tests
+  creating build/lib.linux_armv7l-cpython-38/photutils/datasets/tests
+  copying photutils/datasets/tests/test_load.py -> build/lib.linux_armv7l-cpython-38/photutils/datasets/tests
+  copying photutils/datasets/tests/__init__.py -> build/lib.linux_armv7l-cpython-38/photutils/datasets/tests
+  copying photutils/datasets/tests/test_make.py -> build/lib.linux_armv7l-cpython-38/photutils/datasets/tests
+  creating build/lib.linux_armv7l-cpython-38/photutils/centroids/tests
+  copying photutils/centroids/tests/test_gaussian.py -> build/lib.linux_armv7l-cpython-38/photutils/centroids/tests
+  copying photutils/centroids/tests/__init__.py -> build/lib.linux_armv7l-cpython-38/photutils/centroids/tests
+  copying photutils/centroids/tests/test_core.py -> build/lib.linux_armv7l-cpython-38/photutils/centroids/tests
+  creating build/lib.linux_armv7l-cpython-38/photutils/utils/tests
+  copying photutils/utils/tests/test_depths.py -> build/lib.linux_armv7l-cpython-38/photutils/utils/tests
+  copying photutils/utils/tests/test_moments.py -> build/lib.linux_armv7l-cpython-38/photutils/utils/tests
+  copying photutils/utils/tests/test_errors.py -> build/lib.linux_armv7l-cpython-38/photutils/utils/tests
+  copying photutils/utils/tests/test_interpolation.py -> build/lib.linux_armv7l-cpython-38/photutils/utils/tests
+  copying photutils/utils/tests/test_quantity_helpers.py -> build/lib.linux_armv7l-cpython-38/photutils/utils/tests
+  copying photutils/utils/tests/test_footprints.py -> build/lib.linux_armv7l-cpython-38/photutils/utils/tests
+  copying photutils/utils/tests/test_parameters.py -> build/lib.linux_armv7l-cpython-38/photutils/utils/tests
+  copying photutils/utils/tests/test_convolution.py -> build/lib.linux_armv7l-cpython-38/photutils/utils/tests
+  copying photutils/utils/tests/test_colormaps.py -> build/lib.linux_armv7l-cpython-38/photutils/utils/tests
+  copying photutils/utils/tests/__init__.py -> build/lib.linux_armv7l-cpython-38/photutils/utils/tests
+  copying photutils/utils/tests/test_cutouts.py -> build/lib.linux_armv7l-cpython-38/photutils/utils/tests
+  copying photutils/utils/tests/test_misc.py -> build/lib.linux_armv7l-cpython-38/photutils/utils/tests
+  creating build/lib.linux_armv7l-cpython-38/photutils/geometry/tests
+  copying photutils/geometry/tests/test_rectangular_overlap_grid.py -> build/lib.linux_armv7l-cpython-38/photutils/geometry/tests
+  copying photutils/geometry/tests/test_circular_overlap_grid.py -> build/lib.linux_armv7l-cpython-38/photutils/geometry/tests
+  copying photutils/geometry/tests/test_elliptical_overlap_grid.py -> build/lib.linux_armv7l-cpython-38/photutils/geometry/tests
+  copying photutils/geometry/tests/__init__.py -> build/lib.linux_armv7l-cpython-38/photutils/geometry/tests
+  creating build/lib.linux_armv7l-cpython-38/photutils/detection/tests
+  copying photutils/detection/tests/test_peakfinder.py -> build/lib.linux_armv7l-cpython-38/photutils/detection/tests
+  copying photutils/detection/tests/test_irafstarfinder.py -> build/lib.linux_armv7l-cpython-38/photutils/detection/tests
+  copying photutils/detection/tests/test_starfinder.py -> build/lib.linux_armv7l-cpython-38/photutils/detection/tests
+  copying photutils/detection/tests/test_daofinder.py -> build/lib.linux_armv7l-cpython-38/photutils/detection/tests
+  copying photutils/detection/tests/__init__.py -> build/lib.linux_armv7l-cpython-38/photutils/detection/tests
+  creating build/lib.linux_armv7l-cpython-38/photutils/aperture/tests
+  copying photutils/aperture/tests/test_photometry.py -> build/lib.linux_armv7l-cpython-38/photutils/aperture/tests
+  copying photutils/aperture/tests/test_circle.py -> build/lib.linux_armv7l-cpython-38/photutils/aperture/tests
+  copying photutils/aperture/tests/test_aperture_common.py -> build/lib.linux_armv7l-cpython-38/photutils/aperture/tests
+  copying photutils/aperture/tests/test_mask.py -> build/lib.linux_armv7l-cpython-38/photutils/aperture/tests
+  copying photutils/aperture/tests/test_stats.py -> build/lib.linux_armv7l-cpython-38/photutils/aperture/tests
+  copying photutils/aperture/tests/__init__.py -> build/lib.linux_armv7l-cpython-38/photutils/aperture/tests
+  copying photutils/aperture/tests/test_rectangle.py -> build/lib.linux_armv7l-cpython-38/photutils/aperture/tests
+  copying photutils/aperture/tests/test_bounding_box.py -> build/lib.linux_armv7l-cpython-38/photutils/aperture/tests
+  copying photutils/aperture/tests/test_ellipse.py -> build/lib.linux_armv7l-cpython-38/photutils/aperture/tests
+  copying photutils/CITATION.rst -> build/lib.linux_armv7l-cpython-38/photutils
+  creating build/lib.linux_armv7l-cpython-38/photutils/isophote/tests/data
+  copying photutils/isophote/tests/data/README.rst -> build/lib.linux_armv7l-cpython-38/photutils/isophote/tests/data
+  copying photutils/isophote/tests/data/M51_table.fits -> build/lib.linux_armv7l-cpython-38/photutils/isophote/tests/data
+  copying photutils/isophote/tests/data/synth_table_mean.fits -> build/lib.linux_armv7l-cpython-38/photutils/isophote/tests/data
+  copying photutils/isophote/tests/data/synth_table.fits -> build/lib.linux_armv7l-cpython-38/photutils/isophote/tests/data
+  copying photutils/isophote/tests/data/synth_lowsnr_table.fits -> build/lib.linux_armv7l-cpython-38/photutils/isophote/tests/data
+  copying photutils/isophote/tests/data/minimum_radius_test.fits -> build/lib.linux_armv7l-cpython-38/photutils/isophote/tests/data
+  copying photutils/isophote/tests/data/synth_table_mean.txt -> build/lib.linux_armv7l-cpython-38/photutils/isophote/tests/data
+  copying photutils/isophote/tests/data/synth_highsnr_table.fits -> build/lib.linux_armv7l-cpython-38/photutils/isophote/tests/data
+  creating build/lib.linux_armv7l-cpython-38/photutils/detection/tests/data
+  copying photutils/detection/tests/data/irafstarfind_test_thresh10.0_fwhm01.0.txt -> build/lib.linux_armv7l-cpython-38/photutils/detection/tests/data
+  copying photutils/detection/tests/data/daofind_test_thresh08.0_fwhm01.0.txt -> build/lib.linux_armv7l-cpython-38/photutils/detection/tests/data
+  copying photutils/detection/tests/data/daofind_test_thresh10.0_fwhm01.0.txt -> build/lib.linux_armv7l-cpython-38/photutils/detection/tests/data
+  copying photutils/detection/tests/data/irafstarfind_test_thresh08.0_fwhm01.5.txt -> build/lib.linux_armv7l-cpython-38/photutils/detection/tests/data
+  copying photutils/detection/tests/data/daofind_test_thresh10.0_fwhm02.0.txt -> build/lib.linux_armv7l-cpython-38/photutils/detection/tests/data
+  copying photutils/detection/tests/data/irafstarfind_test_thresh10.0_fwhm02.0.txt -> build/lib.linux_armv7l-cpython-38/photutils/detection/tests/data
+  copying photutils/detection/tests/data/irafstarfind_test_thresh08.0_fwhm01.0.txt -> build/lib.linux_armv7l-cpython-38/photutils/detection/tests/data
+  copying photutils/detection/tests/data/irafstarfind_test_thresh08.0_fwhm02.0.txt -> build/lib.linux_armv7l-cpython-38/photutils/detection/tests/data
+  copying photutils/detection/tests/data/daofind_test_thresh08.0_fwhm01.5.txt -> build/lib.linux_armv7l-cpython-38/photutils/detection/tests/data
+  copying photutils/detection/tests/data/daofind_test_thresh10.0_fwhm01.5.txt -> build/lib.linux_armv7l-cpython-38/photutils/detection/tests/data
+  copying photutils/detection/tests/data/irafstarfind_test_thresh10.0_fwhm01.5.txt -> build/lib.linux_armv7l-cpython-38/photutils/detection/tests/data
+  copying photutils/detection/tests/data/daofind_test_thresh08.0_fwhm02.0.txt -> build/lib.linux_armv7l-cpython-38/photutils/detection/tests/data
+  running build_ext
+  cythoning ./photutils/geometry/core.pyx to ./photutils/geometry/core.c
+  cythoning ./photutils/geometry/elliptical_overlap.pyx to ./photutils/geometry/elliptical_overlap.c
+  cythoning ./photutils/geometry/rectangular_overlap.pyx to ./photutils/geometry/rectangular_overlap.c
+  cythoning ./photutils/geometry/circular_overlap.pyx to ./photutils/geometry/circular_overlap.c
+  building 'photutils.geometry.core' extension
+  creating build/temp.linux_armv7l-cpython-38
+  creating build/temp.linux_armv7l-cpython-38/photutils
+  creating build/temp.linux_armv7l-cpython-38/photutils/geometry
+  /home/deniz/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/linux-x86_64/bin/armv7a-linux-androideabi21-clang -Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -I/home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/requirements/chaquopy/include -march=armv7-a -mthumb -mfpu=vfpv3-d16 -idirafter /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/requirements/chaquopy/include/python3.8 -fPIC -c ./photutils/geometry/core.c -o build/temp.linux_armv7l-cpython-38/./photutils/geometry/core.o
+  ./photutils/geometry/core.c:746:10: fatal error: 'numpy/arrayobject.h' file not found
+  #include "numpy/arrayobject.h"
+           ^~~~~~~~~~~~~~~~~~~~~
+  1 error generated.
+  error: command '/home/deniz/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/linux-x86_64/bin/armv7a-linux-androideabi21-clang' failed with exit code 1
+  Building wheel for photutils (setup.py): finished with status 'error'
+  ERROR: Failed building wheel for photutils
+  Running setup.py clean for photutils
+  Running command /home/deniz/.virtualenvs/chaq/bin/python3.8 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/src/setup.py'"'"'; __file__='"'"'/home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/src/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' clean --all
+  Chaquopy: clean command disabled
+Failed to build photutils
+Cleaning up...
+Removed build tracker '/tmp/pip-req-tracker-k9j5pu55'
+ERROR: Failed to build one or more wheels
+Exception information:
+Traceback (most recent call last):
+  File "/home/deniz/.virtualenvs/chaq/lib/python3.8/site-packages/pip/_internal/cli/base_command.py", line 153, in _main
+    status = self.run(options, args)
+  File "/home/deniz/.virtualenvs/chaq/lib/python3.8/site-packages/pip/_internal/commands/wheel.py", line 171, in run
+    raise CommandError(
+pip._internal.exceptions.CommandError: Failed to build one or more wheels
+build-wheel.py: Error: Command returned exit status 1

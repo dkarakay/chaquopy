@@ -5,4 +5,4 @@ package:
 requirements:
   host:
     - numpy 1.21.4
-    - astropy 5.1.0
+    - astropy 5.1
