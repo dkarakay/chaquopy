@@ -1,22 +1,16 @@
-build-wheel.py: mkdir -p /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.7.0
-build-wheel.py: cd /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.7.0
-build-wheel.py: mkdir -p /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.7.0/cp38-cp38-android_21_armeabi_v7a
-build-wheel.py: python3.8 -m pip --disable-pip-version-check download --no-deps --no-binary photutils --no-build-isolation photutils==1.7.0
-Collecting photutils==1.7.0
-  Downloading https://files.pythonhosted.org/packages/64/73/ae1af70d6c4b254e0f0b35aa2b5ec9cf851310dd7139788c41abb55ee473/photutils-1.7.0.tar.gz (1.0MB)
-  Saved ./photutils-1.7.0.tar.gz
-    Preparing wheel metadata: started
-    Preparing wheel metadata: finished with status 'done'
-Successfully downloaded photutils
-build-wheel.py: tar -C /tmp/build-wheel-wxj55phm -xf photutils-1.7.0.tar.gz
-build-wheel.py: mv /tmp/build-wheel-wxj55phm/photutils-1.7.0 /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.7.0/cp38-cp38-android_21_armeabi_v7a/src
-build-wheel.py: rm -rf /tmp/build-wheel-wxj55phm
-build-wheel.py: mv /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.7.0/cp38-cp38-android_21_armeabi_v7a/src/pyproject.toml /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.7.0/cp38-cp38-android_21_armeabi_v7a/src/pyproject-chaquopy-disabled.toml
-build-wheel.py: mkdir -p /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.7.0/cp38-cp38-android_21_armeabi_v7a/requirements
-build-wheel.py: mkdir -p /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.7.0/cp38-cp38-android_21_armeabi_v7a/requirements/chaquopy/include
-build-wheel.py: mkdir -p /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.7.0/cp38-cp38-android_21_armeabi_v7a/requirements/chaquopy/lib
-build-wheel.py: unzip -q -d /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.7.0/cp38-cp38-android_21_armeabi_v7a/requirements/chaquopy /home/deniz/dev/fork/chaquopy/maven/com/chaquo/python/target/3.8.16-0/target-3.8.16-0-armeabi-v7a.zip include/* jniLibs/*
-build-wheel.py: mv /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.7.0/cp38-cp38-android_21_armeabi_v7a/requirements/chaquopy/jniLibs/armeabi-v7a/* /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.7.0/cp38-cp38-android_21_armeabi_v7a/requirements/chaquopy/lib
-build-wheel.py: rm -r /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.7.0/cp38-cp38-android_21_armeabi_v7a/requirements/chaquopy/jniLibs
-build-wheel.py: unzip -d /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.7.0/cp38-cp38-android_21_armeabi_v7a/requirements -q /home/deniz/dev/fork/chaquopy/server/pypi/dist/numpy/numpy-1.21.4-1-cp38-cp38-android_16_armeabi_v7a.whl
+build-wheel.py: cd /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0
+build-wheel.py: rm -rf /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a
+build-wheel.py: mkdir -p /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a
+build-wheel.py: Using cached sdist
+build-wheel.py: tar -C /tmp/build-wheel-n_s7giki -xf photutils-1.8.0.tar.gz
+build-wheel.py: mv /tmp/build-wheel-n_s7giki/photutils-1.8.0 /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/src
+build-wheel.py: rm -rf /tmp/build-wheel-n_s7giki
+build-wheel.py: mv /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/src/pyproject.toml /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/src/pyproject-chaquopy-disabled.toml
+build-wheel.py: mkdir -p /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/requirements
+build-wheel.py: mkdir -p /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/requirements/chaquopy/include
+build-wheel.py: mkdir -p /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/requirements/chaquopy/lib
+build-wheel.py: unzip -q -d /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/requirements/chaquopy /home/deniz/dev/fork/chaquopy/maven/com/chaquo/python/target/3.8.16-0/target-3.8.16-0-armeabi-v7a.zip include/* jniLibs/*
+build-wheel.py: mv /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/requirements/chaquopy/jniLibs/armeabi-v7a/* /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/requirements/chaquopy/lib
+build-wheel.py: rm -r /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/requirements/chaquopy/jniLibs
+build-wheel.py: unzip -d /home/deniz/dev/fork/chaquopy/server/pypi/packages/photutils/build/1.8.0/cp38-cp38-android_21_armeabi_v7a/requirements -q /home/deniz/dev/fork/chaquopy/server/pypi/dist/numpy/numpy-1.21.4-1-cp38-cp38-android_16_armeabi_v7a.whl
 build-wheel.py: Error: Couldn't find wheel for requirement astropy 5.1.0
