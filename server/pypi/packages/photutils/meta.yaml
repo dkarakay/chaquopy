@@ -1,0 +1,8 @@
+package:
+  name: photutils
+  version: 1.8.0
+
+requirements:
+  host:
+    - numpy 1.21.4
+    - astropy 5.1.0
