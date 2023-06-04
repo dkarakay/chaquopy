@@ -4,7 +4,7 @@ package:
 
 requirements:
   build:
-    - cython 0.29.32
+    - cython 0.29.30
     - extension-helpers 1.0.0
     - setuptools-scm 7.1.0
   host:
